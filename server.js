@@ -127,6 +127,6 @@ app.get("/test", (req, res) => {
   res.render(__dirname + "/index.ejs", { html });
 });
 
-server.listen(5000, () => {
+server.listen(process_env.PORT || 5000, () => {
   console.log("Server is running on port 5000");
 });
